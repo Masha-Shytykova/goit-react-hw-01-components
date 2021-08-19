@@ -1,4 +1,4 @@
-import s from "./statistics.module.css";
+import s from "./Statistics.module.css";
 import PropTypes from "prop-types";
 
 function makeRandomColor() {
