@@ -15,16 +15,16 @@ const statistics = ({ title, stats }) => {
       {title && <h2 className={s.title}>{title}</h2>}
 
       <ul className={s.stat_list}>
-        {stats.map((el) => (
+        {stats.map(({ id, label, percentage }) => (
           <li
             className={s.item}
             style={{
               backgroundColor: makeRandomColor(),
             }}
-            key={el.id}
+            key={id}
           >
-            <span className={s.label}>{el.label}</span>
-            <span className={s.percentage}>{`${el.percentage}%`}</span>
+            <span className={s.label}>{label}</span>
+            <span className={s.percentage}>{`${percentage}%`}</span>
           </li>
         ))}
       </ul>
