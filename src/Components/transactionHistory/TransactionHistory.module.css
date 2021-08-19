@@ -1,0 +1,10 @@
+.transaction_history {
+  width: 100%;
+  text-align: center;
+}
+
+.thead {
+  height: 30px;
+  background-color: rgb(93, 208, 228);
+  color: #ffffff;
+}

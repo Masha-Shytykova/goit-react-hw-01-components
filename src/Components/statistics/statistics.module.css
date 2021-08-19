@@ -1,0 +1,29 @@
+.statistics {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.title {
+  height: 50px;
+  background-color: white;
+}
+.stat_list {
+  display: flex;
+
+  margin-bottom: 15px;
+
+  justify-content: space-between;
+  color: white;
+}
+
+.item {
+  height: 70px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.label {
+  margin-bottom: 5px;
+}
