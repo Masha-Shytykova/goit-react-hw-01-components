@@ -1,12 +1,16 @@
 import FriendsListItem from "../FriendsListItem/FriendsListItem";
-import s from "./FriendList.module.css";
 
-import friends from "../../data/friends.json";
-
-const FriendList = () => {
+const FriendList = ({ friends }) => {
   return (
-    <ul className={s.friend_list}>
-      <FriendsListItem friends={friends} />
+    <ul>
+      {friends.map(({ id, avatar, name, isOnline }) => (
+        <FriendsListItem
+          key={id}
+          avatar={avatar}
+          name={name}
+          isOnline={isOnline}
+        />
+      ))}
     </ul>
   );
 };
